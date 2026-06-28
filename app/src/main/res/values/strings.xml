@@ -86,7 +86,7 @@
     <string name="desc_setor_sampah">Lengkapi form di bawah ini untuk mencatat setoran sampah Anda hari ini.</string>
     <string name="hint_jenis_sampah_setor">Jenis Sampah</string>
     <string name="hint_berat_sampah">Berat Sampah (Kg)</string>
-    <string name="label_foto_bukti">Foto Bukti (Opsional)</string>
+    <string name="label_foto_bukti">Foto Bukti</string>
     <string name="text_upload_foto">Ketuk untuk unggah foto</string>
     <string name="title_estimasi">Estimasi Saldo</string>
     <string name="desc_estimasi">Nilai akhir akan ditentukan setelah verifikasi oleh petugas Bank Sampah.</string>

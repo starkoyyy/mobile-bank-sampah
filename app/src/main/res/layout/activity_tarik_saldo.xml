@@ -80,10 +80,11 @@
                         android:textSize="14sp" />
 
                     <TextView
+                        android:id="@+id/tv_saldo_tersedia_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Rp 150.000"
+                        android:text="Rp 0"
                         android:textColor="#064214"
                         android:textSize="40sp"
                         android:textStyle="normal" />
@@ -140,20 +141,36 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_label_metode">
 
                 <!-- Tunai -->
-                <TextView
+                <LinearLayout
                     android:id="@+id/chip_tunai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_chip_unselected"
-                    android:paddingStart="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
                     android:paddingTop="8dp"
                     android:paddingEnd="16dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/metode_tunai"
-                    android:textColor="#555555"
-                    android:textSize="12sp" />
+                    android:paddingBottom="8dp">
 
-                <!-- Transfer (Selected) -->
+                    <ImageView
+                        android:id="@+id/iv_check_tunai"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_check_small" />
+
+                    <TextView
+                        android:id="@+id/tv_tunai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/metode_tunai"
+                        android:textColor="#555555"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Transfer -->
                 <LinearLayout
                     android:id="@+id/chip_transfer"
                     android:layout_width="wrap_content"
@@ -169,12 +186,14 @@
                     android:paddingBottom="8dp">
 
                     <ImageView
+                        android:id="@+id/iv_check_transfer"
                         android:layout_width="14dp"
                         android:layout_height="14dp"
                         android:layout_marginEnd="6dp"
                         android:src="@drawable/ic_check_small" />
 
                     <TextView
+                        android:id="@+id/tv_transfer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/metode_transfer"
@@ -183,20 +202,57 @@
                 </LinearLayout>
 
                 <!-- E-Wallet -->
-                <TextView
+                <LinearLayout
                     android:id="@+id/chip_ewallet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_chip_unselected"
-                    android:paddingStart="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
                     android:paddingTop="8dp"
                     android:paddingEnd="16dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/metode_ewallet"
-                    android:textColor="#555555"
-                    android:textSize="12sp" />
+                    android:paddingBottom="8dp">
 
+                    <ImageView
+                        android:id="@+id/iv_check_ewallet"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_check_small" />
+
+                    <TextView
+                        android:id="@+id/tv_ewallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/metode_ewallet"
+                        android:textColor="#555555"
+                        android:textSize="12sp" />
+                </LinearLayout>
             </LinearLayout>
+
+            <!-- Pilihan Provider (Bank / E-Wallet) -->
+            <TextView
+                android:id="@+id/tv_label_provider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Pilih Bank"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_methods" />
+
+            <Spinner
+                android:id="@+id/spinner_provider"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_box"
+                android:paddingStart="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_provider" />
 
             <!-- Nomor Rekening Tujuan -->
             <TextView
@@ -209,7 +265,7 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ll_methods" />
+                app:layout_constraintTop_toBottomOf="@+id/spinner_provider" />
 
             <EditText
                 android:id="@+id/et_rekening"

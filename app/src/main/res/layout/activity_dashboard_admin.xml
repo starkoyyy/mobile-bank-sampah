@@ -7,20 +7,25 @@
     android:background="#FAFAFA"
     tools:context=".DashboardAdminActivity">
 
-    <ScrollView
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_admin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp">
 
             <!-- Header -->
             <TextView
@@ -46,11 +51,9 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_person"
-                    app:tint="#064214" />
+                    android:id="@+id/iv_profile_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
             </androidx.cardview.widget.CardView>
 
             <!-- Card 1: Total Saldo Warga -->
@@ -80,6 +83,7 @@
                         android:textSize="14sp" />
 
                     <TextView
+                        android:id="@+id/tv_admin_saldo_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -133,6 +137,7 @@
                             android:textSize="12sp" />
 
                         <TextView
+                            android:id="@+id/tv_admin_nasabah_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -174,6 +179,7 @@
                             android:textSize="12sp" />
 
                         <TextView
+                            android:id="@+id/tv_admin_sampah_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -234,9 +240,11 @@
 
                 <!-- Item 1 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_persetujuan_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
@@ -278,6 +286,7 @@
                             app:layout_constraintTop_toTopOf="@+id/cv_icon_admin_1" />
 
                         <TextView
+                            android:id="@+id/tv_desc_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/admin_desc_1"
@@ -304,9 +313,11 @@
 
                 <!-- Item 2 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_persetujuan_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
@@ -348,6 +359,7 @@
                             app:layout_constraintTop_toTopOf="@+id/cv_icon_admin_2" />
 
                         <TextView
+                            android:id="@+id/tv_desc_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/admin_desc_2"
@@ -374,9 +386,11 @@
 
                 <!-- Item 3 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_persetujuan_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    android:visibility="gone"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
@@ -418,6 +432,7 @@
                             app:layout_constraintTop_toTopOf="@+id/cv_icon_admin_3" />
 
                         <TextView
+                            android:id="@+id/tv_desc_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/admin_desc_3"
@@ -444,6 +459,7 @@
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <!-- Bottom Navigation Bar Admin -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -459,3 +475,4 @@
         app:menu="@menu/bottom_nav_menu_admin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

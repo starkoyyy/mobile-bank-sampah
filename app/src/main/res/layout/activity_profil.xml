@@ -89,6 +89,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/tv_profile_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -98,6 +99,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_profile_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -123,6 +125,7 @@
                         android:src="@drawable/ic_leaf" />
 
                     <TextView
+                        android:id="@+id/tv_profile_badge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -199,6 +202,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/tv_val_email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
@@ -243,6 +247,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/tv_val_phone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
@@ -287,6 +292,7 @@
                                 android:textSize="12sp" />
 
                             <TextView
+                                android:id="@+id/tv_val_address"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
@@ -339,34 +345,7 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <!-- Notifikasi -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingTop="12dp"
-                        android:paddingBottom="12dp">
 
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_bell_outline" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_weight="1"
-                            android:text="@string/menu_notifikasi"
-                            android:textColor="#333333"
-                            android:textSize="14sp" />
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_chevron_right" />
-                    </LinearLayout>
 
                     <!-- Keamanan & Sandi -->
                     <LinearLayout

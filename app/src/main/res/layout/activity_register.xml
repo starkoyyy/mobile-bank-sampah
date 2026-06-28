@@ -99,6 +99,7 @@
                     android:inputType="textPersonName"
                     android:autofillHints="name"
                     android:padding="16dp"
+                    android:textColor="#333333"
                     android:textColorHint="#888888" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,6 +130,7 @@
                     android:autofillHints="postalAddress"
                     android:gravity="top|start"
                     android:padding="16dp"
+                    android:textColor="#333333"
                     android:textColorHint="#888888" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -157,6 +159,65 @@
                     android:inputType="text"
                     android:autofillHints="username"
                     android:padding="16dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#888888" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Input Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="#CCCCCC"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:autofillHints="emailAddress"
+                    android:padding="16dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#888888" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Input No Telepon -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_no_telepon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="#CCCCCC"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_no_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No. Telepon"
+                    android:inputType="phone"
+                    android:autofillHints="phone"
+                    android:padding="16dp"
+                    android:textColor="#333333"
                     android:textColorHint="#888888" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -177,7 +238,7 @@
                 app:endIconTint="#555555"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_username">
+                app:layout_constraintTop_toBottomOf="@+id/til_no_telepon">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_password"
@@ -187,6 +248,7 @@
                     android:inputType="textPassword"
                     android:autofillHints="password"
                     android:padding="16dp"
+                    android:textColor="#333333"
                     android:textColorHint="#888888" />
             </com.google.android.material.textfield.TextInputLayout>
 
