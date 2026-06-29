@@ -8,13 +8,13 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/recycle_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/recycle_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.TUGAS_PAB">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.nasabah.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,67 +24,71 @@
         </activity>
         
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:exported="false" />
         
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.auth.RegisterActivity"
             android:exported="false" />
         
         <activity
-            android:name=".DashboardActivity"
+            android:name=".ui.nasabah.DashboardActivity"
             android:exported="false" />
         
         <activity
-            android:name=".DashboardAdminActivity"
+            android:name=".ui.admin.DashboardAdminActivity"
             android:exported="false" />
         
         <activity
-            android:name=".CetakLaporanActivity"
+            android:name=".ui.admin.CetakLaporanActivity"
             android:exported="false" />
             
         <activity
-            android:name=".TarikSaldoActivity"
+            android:name=".ui.nasabah.TarikSaldoActivity"
             android:exported="false" />
             
         <activity
-            android:name=".DetailPersetujuanActivity"
+            android:name=".ui.admin.DetailPersetujuanActivity"
             android:exported="false" />
             
         <activity
-            android:name=".SetorSampahActivity"
+            android:name=".ui.nasabah.SetorSampahActivity"
             android:exported="false" />
             
         <activity
-            android:name=".RiwayatTransaksiActivity"
+            android:name=".ui.nasabah.RiwayatTransaksiActivity"
             android:exported="false" />
             
         <activity
-            android:name=".NotifikasiActivity"
+            android:name=".ui.nasabah.NotifikasiActivity"
             android:exported="false" />
             
         <activity
-            android:name=".EdukasiLingkunganActivity"
+            android:name=".ui.nasabah.EdukasiLingkunganActivity"
             android:exported="false" />
             
         <activity
-            android:name=".DetailArtikelActivity"
+            android:name=".ui.nasabah.DetailArtikelActivity"
             android:exported="false" />
             
         <activity
-            android:name=".ProfilActivity"
+            android:name=".ui.nasabah.ProfilActivity"
             android:exported="false" />
             
         <activity
-            android:name=".MenuAdminActivity"
+            android:name=".ui.admin.MenuAdminActivity"
             android:exported="false" />
             
         <activity
-            android:name=".KelolaKategoriActivity"
+            android:name=".ui.admin.DaftarPengajuanActivity"
             android:exported="false" />
             
         <activity
-            android:name=".KelolaNasabahActivity"
+            android:name=".ui.admin.KelolaKategoriActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".ui.admin.KelolaNasabahActivity"
             android:exported="false" />
     </application>
 

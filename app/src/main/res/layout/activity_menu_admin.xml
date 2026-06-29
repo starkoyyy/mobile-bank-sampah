@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAFAFA"
-    tools:context=".MenuAdminActivity">
+    tools:context=".ui.admin.MenuAdminActivity">
 
     <ScrollView
         android:layout_width="0dp"
@@ -156,43 +156,6 @@
                     android:background="#EEEEEE"
                     android:layout_marginHorizontal="16dp" />
 
-                <!-- Menu 3 -->
-                <LinearLayout
-                    android:id="@+id/menu_pengaturan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="center_vertical"
-                    android:background="?attr/selectableItemBackground">
-                    
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@android:drawable/ic_menu_preferences"
-                        app:tint="#064214" />
-                        
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginStart="16dp"
-                        android:text="Pengaturan"
-                        android:textColor="#333333"
-                        android:textSize="16sp" />
-                        
-                    <ImageView
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:src="@android:drawable/ic_media_next"
-                        app:tint="#888888" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EEEEEE"
-                    android:layout_marginHorizontal="16dp" />
 
                 <!-- Menu 4 (Keluar) -->
                 <LinearLayout

@@ -13,17 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_circle_gray"
-            android:padding="12dp"
-            android:src="@android:drawable/ic_menu_gallery"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="#555555" />
+
 
         <TextView
             android:id="@+id/tv_nama"
@@ -36,8 +26,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/tv_harga"
-            app:layout_constraintStart_toEndOf="@+id/iv_icon"
-            app:layout_constraintTop_toTopOf="@+id/iv_icon" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_deskripsi"

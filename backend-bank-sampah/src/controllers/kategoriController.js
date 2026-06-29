@@ -21,14 +21,14 @@ exports.getAllKategori = async (req, res) => {
 
 exports.tambahKategori = async (req, res) => {
     try {
-        const { nama, deskripsi, harga } = req.body;
+        const { nama, deskripsi, harga, icon } = req.body;
         if (!nama || !harga) {
             return res.status(400).json({ error: 'Nama dan harga wajib diisi!' });
         }
 
         const { error } = await supabase
             .from('kategori_sampah')
-            .insert([{ nama, deskripsi, harga }]);
+            .insert([{ nama, deskripsi, harga, icon }]);
 
         if (error) throw error;
 
@@ -42,7 +42,7 @@ exports.tambahKategori = async (req, res) => {
 exports.updateKategori = async (req, res) => {
     try {
         const { id } = req.params;
-        const { nama, deskripsi, harga } = req.body;
+        const { nama, deskripsi, harga, icon } = req.body;
 
         if (!nama || !harga) {
             return res.status(400).json({ error: 'Nama dan harga wajib diisi!' });
@@ -50,7 +50,7 @@ exports.updateKategori = async (req, res) => {
 
         const { error } = await supabase
             .from('kategori_sampah')
-            .update({ nama, deskripsi, harga })
+            .update({ nama, deskripsi, harga, icon })
             .eq('id', id);
 
         if (error) throw error;

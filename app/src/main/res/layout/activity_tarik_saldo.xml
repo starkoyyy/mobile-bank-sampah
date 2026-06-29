@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9F9F9"
-    tools:context=".TarikSaldoActivity">
+    tools:context=".ui.nasabah.TarikSaldoActivity">
 
     <!-- App Bar / Header -->
     <androidx.appcompat.widget.Toolbar
@@ -245,14 +245,28 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ll_methods" />
 
-            <Spinner
-                android:id="@+id/spinner_provider"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_provider"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/bg_input_box"
-                android:paddingStart="12dp"
-                app:layout_constraintTop_toBottomOf="@+id/tv_label_provider" />
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="#BDBDBD"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_provider">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pilih Provider Bank / E-Wallet"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:textColor="#333333" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Nomor Rekening Tujuan -->
             <TextView
@@ -265,7 +279,7 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner_provider" />
+                app:layout_constraintTop_toBottomOf="@+id/til_provider" />
 
             <EditText
                 android:id="@+id/et_rekening"

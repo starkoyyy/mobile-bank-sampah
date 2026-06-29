@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".DetailArtikelActivity">
+    tools:context=".ui.nasabah.DetailArtikelActivity">
 
     <!-- App Bar / Header -->
     <androidx.appcompat.widget.Toolbar
@@ -169,140 +169,16 @@
                     android:textSize="14sp"
                     android:lineSpacingExtra="4dp" />
 
-                <!-- Paragraph 2 -->
-                <TextView
+                <!-- Read More Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_read_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/detail_p2"
-                    android:textColor="#555555"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
-
-                <!-- Tips Box -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/bg_tips_box"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tips_title"
-                        android:textColor="#1B5E20"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="12dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="•"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:paddingEnd="8dp" />
-                            
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/tip_1"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:lineSpacingExtra="2dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:orientation="horizontal">
-                        
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="•"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:paddingEnd="8dp" />
-                            
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/tip_2"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:lineSpacingExtra="2dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:orientation="horizontal">
-                        
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="•"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:paddingEnd="8dp" />
-                            
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/tip_3"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:lineSpacingExtra="2dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:orientation="horizontal">
-                        
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="•"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:paddingEnd="8dp" />
-                            
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/tip_4"
-                            android:textColor="#555555"
-                            android:textSize="14sp"
-                            android:lineSpacingExtra="2dp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <!-- Paragraph 3 -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/detail_p3"
-                    android:textColor="#555555"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:layout_marginTop="24dp"
+                    android:text="Baca Berita Selengkapnya"
+                    android:padding="12dp"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="#1B5E20" />
 
                 <View
                     android:layout_width="match_parent"

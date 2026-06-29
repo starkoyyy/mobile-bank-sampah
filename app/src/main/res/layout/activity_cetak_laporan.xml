@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".CetakLaporanActivity">
+    tools:context=".ui.admin.CetakLaporanActivity">
 
     <!-- App Bar / Header -->
     <androidx.appcompat.widget.Toolbar

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAFAFA"
-    tools:context=".DashboardActivity">
+    tools:context=".ui.nasabah.DashboardActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_user"
@@ -53,16 +53,32 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_greeting" />
 
-            <ImageView
-                android:id="@+id/iv_notification"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+            <FrameLayout
+                android:id="@+id/fl_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:contentDescription="Notification"
-                android:src="@drawable/ic_notifications"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_greeting"
                 app:layout_constraintEnd_toStartOf="@+id/cv_profile"
-                app:layout_constraintTop_toTopOf="@+id/tv_greeting" />
+                app:layout_constraintTop_toTopOf="@+id/tv_greeting">
+
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Notification"
+                    android:src="@drawable/ic_notifications" />
+
+                <View
+                    android:id="@+id/v_notification_dot"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/bg_red_dot"
+                    android:visibility="gone" />
+            </FrameLayout>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_profile"

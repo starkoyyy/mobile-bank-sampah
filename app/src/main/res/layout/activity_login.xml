@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:padding="24dp"
-    tools:context=".LoginActivity">
+    tools:context=".ui.auth.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -198,19 +198,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/ll_register"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <!-- Text Set IP (Bottom Centered) -->
-            <TextView
-                android:id="@+id/tv_set_ip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="⚙ Set Server IP"
-                android:textColor="#888888"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

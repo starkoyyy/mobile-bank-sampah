@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAFAFA"
-    tools:context=".DashboardAdminActivity">
+    tools:context=".ui.admin.DashboardAdminActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_admin"
@@ -196,7 +196,7 @@
                 android:id="@+id/v_indicator"
                 android:layout_width="4dp"
                 android:layout_height="18dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:background="#064214"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ll_stats" />
@@ -230,10 +230,9 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_pending_title">
@@ -305,6 +304,7 @@
                             android:textColor="#FFFFFF"
                             app:backgroundTint="#1B5E20"
                             app:cornerRadius="18dp"
+                            android:visibility="gone"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -378,6 +378,7 @@
                             android:textColor="#FFFFFF"
                             app:backgroundTint="#1B5E20"
                             app:cornerRadius="18dp"
+                            android:visibility="gone"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -451,6 +452,7 @@
                             android:textColor="#FFFFFF"
                             app:backgroundTint="#1B5E20"
                             app:cornerRadius="18dp"
+                            android:visibility="gone"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />

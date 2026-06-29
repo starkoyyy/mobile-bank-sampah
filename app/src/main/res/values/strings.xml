@@ -21,8 +21,8 @@
     <string name="halo_budi">Halo, Budi!</string>
     <string name="mari_menabung">Mari kita mulai menabung sampah hari ini.</string>
     <string name="saldo_anda">SALDO ANDA</string>
-    <string name="saldo_amount">Rp 150.000</string>
-    <string name="saldo_growth">+ Rp 25.000 bulan ini</string>
+    <string name="saldo_amount">Rp 0</string>
+    <string name="saldo_growth"></string>
     <string name="setor_sampah">Setor Sampah</string>
     <string name="tarik_saldo">Tarik Saldo</string>
     <string name="riwayat_terakhir">Riwayat Terakhir</string>
@@ -37,11 +37,11 @@
     <string name="nav_profil">Profil</string>
     <string name="halo_admin">Halo, Admin!</string>
     <string name="total_saldo_warga">Total Saldo Warga</string>
-    <string name="admin_saldo_amount">Rp 45.250.000</string>
+    <string name="admin_saldo_amount">Rp 0</string>
     <string name="total_nasabah">Total Nasabah</string>
-    <string name="admin_nasabah_count">1,248</string>
+    <string name="admin_nasabah_count">0</string>
     <string name="total_sampah">Total Sampah (Kg)</string>
-    <string name="admin_sampah_count">8,530</string>
+    <string name="admin_sampah_count">0</string>
     <string name="menunggu_persetujuan">Menunggu Persetujuan</string>
     <string name="btn_setujui">Setujui</string>
     <string name="admin_name_1">Budi Santoso</string>
